@@ -15,3 +15,15 @@ c = f'hello {a} {b}'
 # 格式化字符串，可以通过字符串前添加一个f来创建一个格式化字符串
 # 在格式化字符串中可以直接嵌入变量
 print(c)
+
+
+# 字符串复制
+a = 'abc'
+print(a * 2)
+
+# True相当于1,False相当于0
+print(1 + False)
+
+# 数据类型
+x = type(a)
+print(x)
