@@ -3,6 +3,7 @@
 import pprint
 
 import pymysql
+import pandas as pd
 
 # 2.创建和mysql服务段的连接对象
 try:
@@ -25,6 +26,10 @@ try:
     # 获取查询结果并打印出来
     result = cursor.fetchall()
     print(result)
+
+    df = pd.DataFrame(result)
+
+    df.to_excel('C:/Users/vastio20200925/Desktop/text.xlsx', index=False, header=False)
 
     # 6.将增加和修改操作提交到数据库
     # conn.commit()
